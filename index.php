@@ -37,9 +37,16 @@ require_once("config.php");
 
 
 // Atualizando um registro (update)
+// $usuario = new Usuario();
+// $usuario->loadById(8);
+// $usuario->update("professor","prof");
+// echo $usuario;
+
+
+// Apagar um registro
 $usuario = new Usuario();
 $usuario->loadById(8);
-$usuario->update("professor","prof");
+$usuario->delete();
 echo $usuario;
 
  ?>
