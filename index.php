@@ -23,8 +23,23 @@ require_once("config.php");
 // echo json_encode($search);
 
 // Carrega um usuario usando o login e a senha
+// $usuario = new Usuario();
+// $usuario->login("root", "root");
+// echo $usuario;
+
+// inserindo um novo usuário
+// $aluno = new Usuario("aluno","@lun0");
+// $aluno->setDeslogin("aluno");
+// $aluno->setDessenha("@lun0");
+// $aluno->insert();
+
+// echo $aluno;
+
+
+// Atualizando um registro (update)
 $usuario = new Usuario();
-$usuario->login("root", "root");
+$usuario->loadById(8);
+$usuario->update("professor","prof");
 echo $usuario;
 
  ?>
